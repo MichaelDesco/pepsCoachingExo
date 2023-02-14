@@ -1,0 +1,355 @@
+/* FONTS */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+/* ELEMENTS GLOBAL */
+body{
+    margin: 0;
+    font-family: "Roboto-Regular",Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+header{
+    margin: 1vh 7vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>img{
+    width: 6%;
+}
+
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul>li{
+    list-style: none;
+    padding: 0.5vh 1vw;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
+}
+
+header>nav>ul>li:not(:first-child){
+    border-left: 2px solid black;
+}
+
+
+/* POSTHEADER */
+
+#postheader{
+    background-image: url(../img/backgrounds1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:10% 18%;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#postheader .btn{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px grey;
+    background-color: #ff00aa;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    border: 1px solid #ff00aa;
+    color: #ff00aa;
+}
+
+
+/* APPROCHE */
+
+#approche{
+    padding: 5% 0 3%;
+
+    position: relative;
+}
+
+#approche>h2, #approche>p{
+    line-height: 5px;   
+    text-align: center;
+}
+
+.approches{
+    padding: 8% 0 9%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.approche>ul{
+    padding: 0;
+}
+.approche>ul>li{
+    list-style-type: '- ';
+
+}
+#approche>img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* METHODE */
+
+/* methode header */
+#methode{
+    margin-bottom: 10vh;
+}
+.methode-top{
+    position: relative;
+    margin-bottom: 5vh;
+}
+.methode-top>p{
+    text-align: center;
+    padding: 1vh 30vw;
+}
+.methode-top>h2{
+    text-align: center;
+}
+#methode .btn{
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ff00aa;
+    color: #ff00aa;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px grey;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* methode main */
+.methodes{
+    margin: 8vh 20vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.methode{
+    text-align: center;
+    padding: 2vh 0;
+    width: 300px;
+}
+
+
+/* ACCOMPAGNEMENTS */
+
+/* accompagnement header */
+.accompagnement-top{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.accompagnement-top>p{
+    display: flex;
+    flex-direction: column;
+}
+
+/* accompagnement main */
+.accompagnements{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 25vh;
+}
+.accompagnement{    
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+.accompagnement>h3, .contents4>p{
+    text-align: center;
+}
+.accompagnement>h3{
+    font-size: 1.5rem;
+}
+.accompagnement>p{
+    line-height: 30px;
+}
+.talent::after{
+    content: "TES TALENTS";
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    background:linear-gradient(white 50%, rgb(0, 255, 255) 50%);
+}
+.carrière::after{
+    content: "TA CARRIÈRE";
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    background:linear-gradient(white 50%, rgb(251, 255, 0) 50%);
+}
+.force::after{
+    content: "FORCE COMMERCIALE";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    background:linear-gradient(white 50%, rgb(255, 0, 200) 50%);
+}
+
+#accompagnement>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* TESTIMONIAL */
+
+/* testimonial header */
+#testimonial>h2{
+    padding: 6vh 0 10vh;
+    text-align: center;
+}
+
+/* testimonial main */
+.testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh 0 10vh;
+}
+.testimonial{
+    padding: 5% 2% 0%;
+    width: 20%;
+    border: 1px solid #00ffdd;
+    position: relative;
+}
+.testimonial>img{
+    background-color: white;
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%, 0);
+    padding: 0 10px;
+}
+.testimonial>h3{
+    text-align: center;
+    line-height: 1px;
+}
+.testimonial>p:first-of-type{
+    text-align: center;
+}
+.testimonial>:last-of-type{
+    font-size: 0.8rem;
+}
+
+
+/* BLOG */
+#blog>h2, #blog>p{
+    text-align: center;
+}
+.articles{
+    display: flex;
+    margin: 3% 7%;
+}
+#blog img{
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px grey;
+}
+.article>h3{
+    font-size: 1rem;
+    margin: 0;
+}
+.article>p{
+    font-size: 1rem;
+    
+}
+.article{
+    padding: 0% 4% 1%;
+    position: relative;
+}
+hr{
+    background-color: #00ffdd;
+    height: 2px;
+    width: 80%;
+    border: none;
+}
+#blog .btn{
+    position: absolute;
+    bottom: 0%;
+    text-decoration: none;
+    color: #ff00aa;
+    border: 1px solid #ff00aa;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+#blog .btn:hover{
+    background-color: #ff00aa;
+    color: white;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: grey;
+    margin-bottom: 0;
+}
+.contact>h2{
+    font-size: 0.8rem;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 10% 2% 35%;
+    height: 100px;
+}
+.contact>img{
+    border-right: 2px solid black;
+    padding: 10px 40px 10px 0;
+}
+.contact>p:not(:first-of-type){
+    margin: 0;
+}
+.contact{
+    padding: 10% 10%;
+}
+.contact>a{
+    text-decoration: none;
+}
+footer>nav>ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+footer>nav>ul>li{
+    list-style: none;
+    padding: 1px 15px;
+}
+footer>nav>ul>li:not(:first-child){
+    border-left: 1px solid black;
+}
+footer>nav>ul>li>a{
+    text-decoration: none;
+}
