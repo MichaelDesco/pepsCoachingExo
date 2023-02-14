@@ -10,7 +10,9 @@ body{
     margin: 0;
     font-family: "Roboto-Regular",Arial, Helvetica, sans-serif;
 }
-
+h1, h2, h3, h4, a, strong{
+    text-shadow: 1px 1px 2px grey;
+}
 
 /* HEADER */
 
@@ -57,6 +59,7 @@ header>nav>ul>li:not(:first-child){
     background-repeat: no-repeat;
     text-align: center;
     padding:10% 18%;
+    box-shadow: 1px 1px 2px grey;
 }
 
 h1{
@@ -73,7 +76,7 @@ h1{
     color: white;
 }
 
-.btn:hover{
+#postheader .btn:hover{
     background-color: white;
     border: 1px solid #ff00aa;
     color: #ff00aa;
@@ -126,7 +129,7 @@ h1{
 }
 .methode-top>p{
     text-align: center;
-    padding: 1vh 30vw;
+    padding: 2vh 30vw;
 }
 .methode-top>h2{
     text-align: center;
@@ -148,15 +151,15 @@ h1{
 
 /* methode main */
 .methodes{
-    margin: 8vh 20vw;
+    margin: 14vh 20vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .methode{
     text-align: center;
-    padding: 2vh 0;
-    width: 300px;
+    padding: 4vh 0;
+    width: 40%;
 }
 
 
@@ -175,6 +178,7 @@ h1{
 
 /* accompagnement main */
 .accompagnements{
+    
     display:flex;
     justify-content: space-around;
     margin-bottom: 25vh;
@@ -214,7 +218,25 @@ h1{
     width: 70%;
     background:linear-gradient(white 50%, rgb(255, 0, 200) 50%);
 }
-
+#accompagnement .btn{
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #ff00aa;
+    color: #ff00aa;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px grey;
+    
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    
+}
+#accompagnement .btn:hover{
+    background-color: #ff00aa;
+    color: white;
+}
 #accompagnement>img{
     position: absolute;
     left: 50%;
@@ -325,7 +347,7 @@ footer{
     padding: 3% 10% 2% 35%;
     height: 100px;
 }
-.contact>img{
+.contacts>img{
     border-right: 2px solid black;
     padding: 10px 40px 10px 0;
 }
@@ -348,7 +370,7 @@ footer>nav>ul>li{
     padding: 1px 15px;
 }
 footer>nav>ul>li:not(:first-child){
-    border-left: 1px solid black;
+    border-left: 2px solid black;
 }
 footer>nav>ul>li>a{
     text-decoration: none;
