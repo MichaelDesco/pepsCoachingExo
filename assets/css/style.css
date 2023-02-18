@@ -120,16 +120,13 @@ h1{
 /* METHODE */
 
 /* methode header */
-#methode{
-    margin-bottom: 10vh;
-}
 .methode-top{
     position: relative;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 .methode-top>p{
     text-align: center;
-    padding: 2vh 31vw;
+    line-height: 3%;
 }
 .methode-top>h2{
     text-align: center;
@@ -146,19 +143,18 @@ h1{
 
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 100%);
 }
 
 /* methode main */
 .methodes{
-    margin: 14vh 20vw;
+    margin: 19vh 19vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .methode{
     text-align: center;
-    padding: 4vh 0;
     width: 40%;
 }
 
@@ -188,7 +184,7 @@ h1{
     margin-bottom: 25vh;
 }
 .accompagnement{    
-    width: 30%;
+    width: 34%;
     position: relative;
     text-align: center;
 }
@@ -206,9 +202,11 @@ h1{
 }
 .talent::after{
     content: "TES TALENTS";
+    display: inline-block;
+    white-space: nowrap;
     display: block;
     margin: 0 auto;
-    width: 37%;
+    width: 170px;
     background:linear-gradient(white 50%, rgb(0, 255, 255) 50%);
 }
 .carrière::after{
@@ -365,7 +363,7 @@ footer{
     padding: 10% 10%;
 }
 .contact>a{
-    text-decoration: none;
+    font-weight: bold;
 }
 footer>nav>ul{
     display: flex;
@@ -379,6 +377,9 @@ footer>nav>ul>li{
 footer>nav>ul>li:not(:first-child){
     border-left: 2px solid black;
 }
-footer>nav>ul>li>a{
+footer a{
     text-decoration: none;
+    color: black;
 }
+
+MEDIA QUERIES
