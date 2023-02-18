@@ -129,7 +129,7 @@ h1{
 }
 .methode-top>p{
     text-align: center;
-    padding: 2vh 30vw;
+    padding: 2vh 31vw;
 }
 .methode-top>h2{
     text-align: center;
@@ -168,12 +168,16 @@ h1{
 /* accompagnement header */
 .accompagnement-top{
     text-align: center;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
 }
 
 .accompagnement-top>p{
     display: flex;
     flex-direction: column;
+    padding-bottom: 2vh;
+}
+.accompagnement-top>h2{
+    line-height: 1px;
 }
 
 /* accompagnement main */
@@ -194,28 +198,31 @@ h1{
 .accompagnement>h3{
     font-size: 1.5rem;
 }
-.accompagnement>p{
-    line-height: 30px;
+.accompagnement>ul{
+    padding: 0;
+}
+.accompagnement>ul li{
+    list-style: none;
 }
 .talent::after{
     content: "TES TALENTS";
     display: block;
     margin: 0 auto;
-    width: 45%;
+    width: 37%;
     background:linear-gradient(white 50%, rgb(0, 255, 255) 50%);
 }
 .carrière::after{
     content: "TA CARRIÈRE";
     display: block;
     margin: 0 auto;
-    width: 45%;
+    width: 37%;
     background:linear-gradient(white 50%, rgb(251, 255, 0) 50%);
 }
 .force::after{
     content: "FORCE COMMERCIALE";
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     background:linear-gradient(white 50%, rgb(255, 0, 200) 50%);
 }
 #accompagnement .btn{
