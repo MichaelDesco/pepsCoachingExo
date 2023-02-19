@@ -3,6 +3,7 @@
     font-family: "Roboto-Regular";
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+/*  */
 
 
 /* ELEMENTS GLOBAL */
@@ -10,62 +11,73 @@ body{
     margin: 0;
     font-family: "Roboto-Regular",Arial, Helvetica, sans-serif;
 }
+footer, section:not(:first-of-type){
+    margin-top: 20vh;
+}
 h1, h2, h3, h4, a, strong{
     text-shadow: 1px 1px 2px grey;
 }
+h1{
+    font-size: 3.5rem;
+}
+ul:not(:nth-of-type(4)){
+    padding: 0%;
+}
+.separator{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+.separator:first-of-type{
+    transform: translate(-50%, 500%);
+}
+.separator:last-of-type{
+    transform: translate(-50%, 50%);
+}
+/*  */
+
 
 /* HEADER */
-
 header{
-    margin: 1vh 7vw;
-
+    margin: 0.5% 1%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-
 header>img{
-    width: 6%;
+    width: 50px;
 }
-
 nav>ul{
     display: flex;
     align-items: center;
 }
-
 header ul>li{
     list-style: none;
-    padding: 0.5vh 1vw;
+    padding: 0 1rem;
+    text-align: center;
 }
-
 header>nav>ul>li>a{
     text-decoration: none;
     color: black;
     font-weight: bold;
     text-shadow: 2px 2px 5px grey;
 }
-
 header>nav>ul>li:not(:first-child){
     border-left: 2px solid black;
 }
+/*  */
 
 
 /* POSTHEADER */
-
 #postheader{
     background-image: url(../img/backgrounds1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding:10% 18%;
+    padding:8% 18%;
     box-shadow: 1px 1px 2px grey;
 }
-
-h1{
-    font-size: 4rem;
-}
-
 #postheader .btn{
     text-decoration: none;
     font-weight: bold;
@@ -81,44 +93,39 @@ h1{
     border: 1px solid #ff00aa;
     color: #ff00aa;
 }
+/*  */
 
 
 /* APPROCHE */
-
 #approche{
-    padding: 5% 0 3%;
-
     position: relative;
 }
-
 #approche>h2, #approche>p{
     line-height: 5px;   
     text-align: center;
 }
-
 .approches{
-    padding: 8% 0 9%;
-
+    margin-top: 4%;
+    margin: 3% 3% 0;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
 }
-.approche>ul{
-    padding: 0;
+.approches>img{
+    padding-right: 3%;
+    height: 100%;
+}
+.approche{
+    margin: 0 0;
+    padding-right: 10%;
 }
 .approche>ul>li{
     list-style-type: '- ';
-
 }
-#approche>img {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
+/*  */
 
 
 /* METHODE */
-
 /* methode header */
 .methode-top{
     position: relative;
@@ -146,10 +153,11 @@ h1{
     left: 50%;
     transform: translate(-50%, 100%);
 }
+/*  */
 
 /* methode main */
 .methodes{
-    margin: 16vh 19vw;
+    margin: 16vh 19vw 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -160,16 +168,16 @@ h1{
     padding: 1%;
     margin-bottom: 3%;
 }
+/*  */
+/*  */
 
 
 /* ACCOMPAGNEMENTS */
-
 /* accompagnement header */
 .accompagnement-top{
     text-align: center;
     margin-bottom: 8vh;
 }
-
 .accompagnement-top>p{
     display: flex;
     flex-direction: column;
@@ -178,10 +186,10 @@ h1{
 .accompagnement-top>h2{
     line-height: 1px;
 }
+/*  */
 
 /* accompagnement main */
-.accompagnements{
-    
+.accompagnements{   
     display:flex;
     justify-content: space-around;
     margin-bottom: 25vh;
@@ -196,9 +204,6 @@ h1{
 }
 .accompagnement>h3{
     font-size: 1.5rem;
-}
-.accompagnement>ul{
-    padding: 0;
 }
 .accompagnement>ul li{
     list-style: none;
@@ -238,14 +243,12 @@ h1{
     font-weight: bold;
     padding: 0.5rem 2rem;
     border-radius: 5px;
-    text-shadow: 2px 2px 5px grey;
-    
+    text-shadow: 2px 2px 5px grey;    
     position: absolute;
     display: inline-block;
     white-space: nowrap;
     bottom: 0;
-    transform: translate(-50%, 100%);
-    
+    transform: translate(-50%, 100%);    
 }
 #accompagnement .btn:hover{
     background-color: #ff00aa;
@@ -256,21 +259,23 @@ h1{
     left: 50%;
     transform: translate(-50%, 0);
 }
+/*  */
+/*  */
 
 
 /* TESTIMONIAL */
-
 /* testimonial header */
 #testimonial>h2{
     padding: 6vh 0 10vh;
     text-align: center;
 }
+/*  */
 
 /* testimonial main */
 .testimonials{
     display: flex;
     justify-content: space-evenly;
-    padding: 2vh 0 10vh;
+    /* padding: 2vh 0 10vh; */
 }
 .testimonial{
     padding: 5% 2% 0%;
@@ -297,6 +302,8 @@ h1{
 .testimonial>:last-of-type{
     font-size: 0.8rem;
 }
+/*  */
+/*  */
 
 
 /* BLOG */
@@ -318,8 +325,7 @@ h1{
     margin: 0;
 }
 .article>p{
-    font-size: 1rem;
-    
+    font-size: 1rem;    
 }
 .article{
     padding: 0% 4% 1%;
@@ -344,12 +350,14 @@ hr{
     background-color: #ff00aa;
     color: white;
 }
+/*  */
+/*  */
 
 
 /* FOOTER */
 footer{
     background-color: grey;
-    margin-bottom: 0;
+    padding-bottom: 1px;
 }
 .contact>h2{
     font-size: 0.8rem;
@@ -358,18 +366,17 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 10% 2% 35%;
-    height: 100px;
+    padding: 0 10% 0 35%;
 }
 .contacts>img{
     border-right: 2px solid black;
-    padding: 10px 40px 10px 0;
+    padding-right: 3rem;
 }
 .contact>p:not(:first-of-type){
     margin: 0;
 }
 .contact{
-    padding: 10% 10%;
+    padding: 0.5rem 3rem;
 }
 .contact>a{
     font-weight: bold;
@@ -377,11 +384,10 @@ footer{
 footer>nav>ul{
     display: flex;
     justify-content: center;
-    padding-bottom: 2vh;
 }
 footer>nav>ul>li{
     list-style: none;
-    padding: 1px 15px;
+    padding: 0.1rem 1rem;
 }
 footer>nav>ul>li:not(:first-child){
     border-left: 2px solid black;
@@ -390,5 +396,45 @@ footer a{
     text-decoration: none;
     color: black;
 }
+/*  */
 
-MEDIA QUERIES
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1024px){
+    header{
+        justify-content: center;
+    }
+    header>nav>ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #postheader{
+        padding: 9% 10.5%;
+    }
+    .approches{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 22%;
+    }
+    .approches>img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    #postheader{
+        padding: 9% 5%;
+    }
+}
+
+@media screen and (max-width:640px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+}
